@@ -13,7 +13,7 @@ describe Encoder do
 
   context 'good data' do
     let!(:file_path) { 'goodtext.txt' }
-    let!(:expected_encoded_message) { ["2/1B|C/1B/1B2|1|C1|2|B|2|C|1B|B|1/C|1|3|3|1B|C1|1"] }
+    let!(:expected_encoded_message) { ["2/1A|B/1A/1A2|1|B1|2|A|2|B|1A|A|1/B|1|3|3|1A|B1|1"] }
 
     it 'returns a correctly encoded message' do
       expect(encoder.encode_message).to eq expected_encoded_message

@@ -36,7 +36,7 @@ class Encoder
   def obfuscate(line)
     line.gsub!(/\.+/) { |dots| dots.length }
 
-    line.gsub!(/\-+/) { |dots| ('A'..'E').to_a[dots.length] }
+    line.gsub!(/\-+/) { |dots| ('A'..'E').to_a[dots.length-1] }
   end
 end
 
