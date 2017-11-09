@@ -1,6 +1,8 @@
 # resourceguru_codetest
 Codetest For Resource Guru
 
+This is written in ruby. Please run bundle install to make sure you have `rspec`
+
 ####Question 1
 
 Please see the `flattener` directory.
